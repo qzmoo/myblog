@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title><%= blog.title %></title>
+		<link rel="stylesheet" href="/css/swiper.css">
+		<link rel="stylesheet" href="/css/style.css">
+		
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		
+		<header class="headroom headroom--pinned" id="header">
+			<div class="content head-bg">
+				<a href="javascript:void(null)" class="logo">
+					<img src="img/logo.png">
+				</a>
+				
+				<a href="javascript:void(null)" class="log">注 册</a>
+				
+				<a href="javascript:void(null)" class="log">登 录</a>
+				
+				<ul class="nav">
+					<li>
+						<a href="index.html" class="cur">首  页</a>
+					</li>
+					<li>
+						<a href="api.html">素材</a>
+					</li>
+					<li>
+						<a href="api.html">教程</a>
+					</li>
+					<li>
+						<a href="api.html">训练</a>
+					</li>
+					<li>
+						<a href="api.html">设计师</a>
+					</li>
+					<li>
+						<a href="api.html">招聘</a>
+					</li>
+					<li>
+						<a href="api.html">问答</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		
+		<div class="main slide">
+			<div class="content">
+				
+				<div class="slide-box">
+					
+					<a href="javascript:void(null)" class="slide-imga">
+						<img src="add/add3.png">
+					</a>
+					
+					<div class="slide-txt">
+						<a href="javascript:void(null)">nnnnnnn</a>
+						<div class="slide-txt-con gray">
+							筑梦凤凰，参与凤凰边城国际青旅的涅槃重生，享受成为驴友联盟多家店优惠或免费入住。筑梦凤凰，参与凤凰边城国际青旅的涅槃重生，享受成为驴友联盟多家店优惠或免费入住。筑梦凤凰，参与凤凰边城国际青旅的涅槃重生，享受成为驴友联盟多家店优惠或免费入住。筑梦凤凰参与凤凰边城国际青旅的涅槃重生，享受成为驴友联盟多家店优惠或免费入住。
+						</div>
+						<div class="slide-txt-bot">
+							<span class="gray">
+								<em class="icon icon-ina"></em> 100
+								<p>浏览量</p>
+							</span>
+							<span class="gray">
+								<em class="icon icon-inb"></em> 100
+								<p>评论</p>
+							</span>
+							<span class="gray">
+								<em class="icon icon-inc"></em> 100
+								<p>关注量</p>
+							</span>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="slide-nav">
+					<a href="javascript:void(null)" class="cur">最青年</a>
+					<a href="javascript:void(null)">最阅读</a>
+					<a href="javascript:void(null)">最正版</a>
+					<a href="javascript:void(null)">最女影</a>
+					<a href="javascript:void(null)">最西游</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="mainer">
+			<div class="contenter">
+				
+				<div class="in-data"></div>
+                
+                <% for(var i=0, len=obj.length; i<len; i++){ %>
+                    <div class="in-box">
+                        <a href="javascript:void(null);" class="in-box-img">
+                            <img src="<%= obj[i].photo %>" alt="" title="">
+                        </a>
+                        <div class="in-box-inte">
+                            <span>
+                                <em class="icon icon-ind"></em>
+                                <i class="gray"><%= obj[i].c_num %></i>
+                            </span>
+                            <span>
+                                <em class="icon icon-ine"></em>
+                                <i class="gray"><%= obj[i].order_no %></i>
+                            </span>
+                            <span>
+                                <em class="icon icon-inf"></em>
+                                <i class="gray"><%= obj[i].c_num %></i>
+                            </span>
+                        </div>
+                        
+                        <div class="in-box-say">
+                            <a href="javascript:void(null);" class="gray"><%= obj[i].name %></a>
+                        </div>
+                        
+                        <a href="javascript:void(null);" class="in-box-user">
+                            <img src="<%= obj[i].photo %>" alt="" title="">
+                        </a>
+                    </div>
+                <% } %>
+
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+				<div class="in-box">
+					<a href="javascript:void(null);" class="in-box-img">
+						<img src="add/add1.jpg" alt="" title="">
+					</a>
+					<div class="in-box-inte">
+						<span>
+							<em class="icon icon-ind"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-ine"></em>
+							<i class="gray">10</i>
+						</span>
+						<span>
+							<em class="icon icon-inf"></em>
+							<i class="gray">10</i>
+						</span>
+					</div>
+					
+					<div class="in-box-say">
+						<a href="javascript:void(null);" class="gray">小丽：我爱我种的花草树木我爱我种的花草树木我爱我种的花草树木</a>
+					</div>
+					
+					<a href="javascript:void(null);" class="in-box-user">
+						<img src="add/add2.jpg" alt="" title="">
+					</a>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="mainer">
+			<div class="contenter">
+				
+				<div class="in-half">
+					<div class="in-half-tit">
+						<h3>推荐设计师</h3>
+						<a href="javascript:void(null);">更多</a>
+					</div>
+					
+					<ul class="in-half-list">
+						<li>
+							<a href="javascript:void(null);" class="in-half-user">
+								<img src="add/add2.jpg" alt="" title="">
+							</a>
+							<dl class="in-half-info">
+								<dt>
+									<a href="javascript:void(null);">小丽</a>
+								</dt>
+								<dd>
+									上传：10
+								</dd>
+								<dd>人气：1001</dd>
+							</dl>
+						</li>
+						<li>
+							<a href="javascript:void(null);" class="in-half-user">
+								<img src="add/add2.jpg" alt="" title="">
+							</a>
+							<dl class="in-half-info">
+								<dt>
+									<a href="javascript:void(null);">小丽</a>
+								</dt>
+								<dd>
+									上传：10
+								</dd>
+								<dd>人气：1001</dd>
+							</dl>
+						</li>
+						<li>
+							<a href="javascript:void(null);" class="in-half-user">
+								<img src="add/add2.jpg" alt="" title="">
+							</a>
+							<dl class="in-half-info">
+								<dt>
+									<a href="javascript:void(null);">小丽</a>
+								</dt>
+								<dd>
+									上传：10
+								</dd>
+								<dd>人气：1001</dd>
+							</dl>
+						</li>
+						<li>
+							<a href="javascript:void(null);" class="in-half-user">
+								<img src="add/add2.jpg" alt="" title="">
+							</a>
+							<dl class="in-half-info">
+								<dt>
+									<a href="javascript:void(null);">小丽</a>
+								</dt>
+								<dd>
+									上传：10
+								</dd>
+								<dd>人气：1001</dd>
+							</dl>
+						</li>
+						<li>
+							<a href="javascript:void(null);" class="in-half-user">
+								<img src="add/add2.jpg" alt="" title="">
+							</a>
+							<dl class="in-half-info">
+								<dt>
+									<a href="javascript:void(null);">小丽</a>
+								</dt>
+								<dd>
+									上传：10
+								</dd>
+								<dd>人气：1001</dd>
+							</dl>
+						</li>
+						<li>
+							<a href="javascript:void(null);" class="in-half-user">
+								<img src="add/add2.jpg" alt="" title="">
+							</a>
+							<dl class="in-half-info">
+								<dt>
+									<a href="javascript:void(null);">小丽</a>
+								</dt>
+								<dd>
+									上传：10
+								</dd>
+								<dd>人气：1001</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="in-half">
+					<div class="in-half-tit">
+						<h3>活跃设计师</h3>
+						<a href="javascript:void(null);">更多</a>
+					</div>
+					
+					<ul class="in-half-list">
+						<li>
+							<a href="javascript:void(null);" class="in-half-user">
+								<img src="add/add2.jpg" alt="" title="">
+							</a>
+							<dl class="in-half-info">
+								<dt>
+									<a href="javascript:void(null);">小丽</a>
+								</dt>
+								<dd>
+									上传：10
+								</dd>
+								<dd>人气：1001</dd>
+							</dl>
+						</li>
+						<li>
+							<a href="javascript:void(null);" class="in-half-user">
+								<img src="add/add2.jpg" alt="" title="">
+							</a>
+							<dl class="in-half-info">
+								<dt>
+									<a href="javascript:void(null);">小丽</a>
+								</dt>
+								<dd>
+									上传：10
+								</dd>
+								<dd>人气：1001</dd>
+							</dl>
+						</li>
+						<li>
+							<a href="javascript:void(null);" class="in-half-user">
+								<img src="add/add2.jpg" alt="" title="">
+							</a>
+							<dl class="in-half-info">
+								<dt>
+									<a href="javascript:void(null);">小丽</a>
+								</dt>
+								<dd>
+									上传：10
+								</dd>
+								<dd>人气：1001</dd>
+							</dl>
+						</li>
+						<li>
+							<a href="javascript:void(null);" class="in-half-user">
+								<img src="add/add2.jpg" alt="" title="">
+							</a>
+							<dl class="in-half-info">
+								<dt>
+									<a href="javascript:void(null);">小丽</a>
+								</dt>
+								<dd>
+									上传：10
+								</dd>
+								<dd>人气：1001</dd>
+							</dl>
+						</li>
+						<li>
+							<a href="javascript:void(null);" class="in-half-user">
+								<img src="add/add2.jpg" alt="" title="">
+							</a>
+							<dl class="in-half-info">
+								<dt>
+									<a href="javascript:void(null);">小丽</a>
+								</dt>
+								<dd>
+									上传：10
+								</dd>
+								<dd>人气：1001</dd>
+							</dl>
+						</li>
+						<li>
+							<a href="javascript:void(null);" class="in-half-user">
+								<img src="add/add2.jpg" alt="" title="">
+							</a>
+							<dl class="in-half-info">
+								<dt>
+									<a href="javascript:void(null);">小丽</a>
+								</dt>
+								<dd>
+									上传：10
+								</dd>
+								<dd>人气：1001</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="mainer">
+			<div class="contenter">
+				<div class="in-half">
+					<div class="in-half-tit">
+						<h3>推荐教程</h3>
+						
+						<a href="javascript:void(null);">更多</a>
+					</div>
+					
+					<div class="in-half-news">
+						<a href="javascript:void(null);" class="in-half-img">
+							<img src="add/add1.jpg" alt="" title="">
+						</a>
+						<div class="in-half-txt">
+							<h3>
+								<a href="javascript:void(null);">shiying推荐教程推荐教程推荐教程推荐教程推荐教程推荐教程推荐教程推荐教程推荐教程推荐教程</a>
+							</h3>
+							<span>2014/09/28</span>
+							<p>训练类展示,采用常规的展示形式,可自行田间栏目模块,留言板块也可自行勾选是否展示.为方便用户使用,会推出4-5套配色方案提供大家选择.暂时为内侧期...</p>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="in-half">
+					<div class="in-half-tit">
+						<h3>热门教程</h3>
+						
+						<a href="javascript:void(null);">更多</a>
+					</div>
+					
+					<div class="in-half-news">
+						<a href="javascript:void(null);" class="in-half-img">
+							<img src="add/add1.jpg" alt="" title="">
+						</a>
+						<div class="in-half-txt">
+							<h3>
+								<a href="javascript:void(null);">shiying推荐教程推荐教程推荐教程推荐教程推荐教程推荐教程推荐教程推荐教程推荐教程推荐教程</a>
+							</h3>
+							<span>2014/09/28</span>
+							<p>训练类展示,采用常规的展示形式,可自行田间栏目模块,留言板块也可自行勾选是否展示.为方便用户使用,会推出4-5套配色方案提供大家选择.暂时为内侧期...</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="mainer">
+			<div class="contenter">
+				
+				<div class="in-qusc">
+					<div class="in-half-big">
+						<h3>11-11</h3>
+						<span>2014年  最新问答</span>
+						<a href="javascript:void(null);">
+							<em class="icon icon-nexta"></em>
+						</a>
+						<a href="javascript:void(null);">
+							<em class="icon icon-preva"></em>
+						</a>
+					</div>
+					
+					<div class="in-half-qust">
+						<h3>
+							<a href="javascript:void(null);">轻知前端 上线测试</a>
+						</h3>
+						<div class="in-half-qusc">
+							训练类展示,采用常规的展示形式,可自行田间栏目模块,留言板块也可自行勾选是否展示,留言板块也可自行勾选是否展示,留言板块也可自行勾选是否展示.为方便用户使用,会推出4-5套配色方案提供大家选择.暂时为内侧期
+							<a href="javascript:void(null);">查看详情</a>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="in-down">
+					<a href="javascript:void(null);" class="in-down-tit">
+						<img src="img/down.png" alt="" title="">
+					</a>
+					<h3>
+						<a href="javascript:void(null);">素材下载</a>
+					</h3>
+					<p>训练类展示,采用常规的展示形式,可自行田间栏目模块,留言板块也可自行勾选是否展示,留言板块也可自行勾选是否展示</p>
+				</div>
+				
+				<div class="in-down hidden-lg visible-md">
+					<a href="javascript:void(null);" class="in-recu-tit">
+						<img src="img/recuri.png" alt="" title="">
+					</a>
+					<h3>
+						<a href="javascript:void(null);">素材下载</a>
+					</h3>
+					<p>训练类展示,采用常规的展示形式,可自行田间栏目模块,留言板块也可自行勾选是否展示,留言板块也可自行勾选是否展示</p>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="main foot">
+			<div class="content">
+				<h3 class="foot-l">
+					联系
+					<p>Contact</p>
+				</h3>
+				<dl class="foot-a">
+					<dt>关于</dt>
+					<dd>
+						<a href="javascript:void(null)">轻知介绍</a>
+					</dd>
+					<dd>
+						<a href="javascript:void(null)">加入我们</a>
+					</dd>
+					<dd>
+						<a href="javascript:void(null)">联系我们</a>
+					</dd>
+				</dl>
+				
+				<dl class="foot-r">
+					<dt>四川轻知科技有限公司</dt>
+					<dd>
+						<span>电话：18273191335</span>
+						<span>地址：长沙市开福区</span>
+					</dd>
+					<dd>
+						<span>邮箱：do_well@163.com</span>
+						<span>邮编：410000</span>
+					</dd>
+					<dd>
+						<span>微信：轻知坊</span>
+						<span>点赞：<a href="http://koubei.baidu.com/s/29833d33376e39c5199e34cbf95f67d9?fr=search" target="_blank">百度口碑</a>
+						</span>
+					</dd>
+				</dl>
+				
+				<div class="foot-b">
+					COPYRIGHT © 2016 轻知 All rights reserved.
+					<a href="javascript:void(null)">湘ICP备15014388号</a>
+				</div>
+				
+			</div>
+		</div>
+		
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/headroom.min.js"></script>
+		<script type="text/javascript">
+			(function() {
+			    var header = document.querySelector("#header");
+			
+			    if(window.location.hash) {
+			    	header.classList.add("headroom--unpinned");
+			    }
+			    var headroom = new Headroom(header, {
+			        tolerance: {
+			          down : 10,
+			          up : 20
+			        },
+			        offset : 205
+			    });
+			    headroom.init();
+			    
+			}());
+			
+		</script>
+		
+	</body>
+</html>
